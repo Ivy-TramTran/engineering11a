@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>3D Printing Project - Ivy Tran Personal Website</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column h-100">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-black py-3">
+        <div class="container px-5">
+            <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Ivy Tran</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                    <li class="nav-item" ><a class="nav-link" href="index.html" style="color: white;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html" style="color: white;">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html" style="color: white;">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" style="color: white;">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3D Printing Project Content -->
+    <main class="flex-shrink-0">
+        <section class="bg-black py-5">
+            <div class="container px-5">
+                <div class="text-center my-5">
+                    <h2 class="display-5 fw-bolder">
+                        <span class="text-gradient d-inline" style="background: linear-gradient(to right, rgb(103, 118, 215), rgb(194, 194, 225)); -webkit-background-clip: text; color: transparent;">3D Printing Project cont. with CAD tools</span>
+                    </h2>
+                        <p class="lead fw-light mb-4" style="color: white; line-height: 2.0;">Below are my experience using CAD tools for the first time. This project reflection includes 2 projects using TinkerCAD and 1 project using Fusion360.</p>
+                </div>
+            </div>
+   
+
+<!-- Project 1-->
+
+                    <div class="col-lg-8" style="margin: auto; margin-bottom: 2.5em;">
+                        <h3 class="h3 fw-bolder text-gradient">TinkerCAD Project 1: Lunar New Year Dragon 3D Print</h3>
+                        
+                        <h4 class="h4 fw-bolder" style="color: white;">Conceptualization and Design</h4>
+                        <p style="color: white; line-height: 2.0;">The project began with the intention to commemorate the Lunar New Year (2024 Year of Dragon) through a symbolic representation using 3D printing. The choice to include culturally significant elements—such as the dragon for prosperity, the maneki-neko cat for wealth, the pearl for wisdom, and the yellow star representing Vietnam flag—was driven by a desire to capture a multifaceted symbol of hope and celebration. The initial conceptual phase involved sketching the layout and considering how each element would interact within the space, ensuring visibility and aesthetic harmony.</p>
+                        <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/dragon_sketch.png" alt="SketchDragon">
+
+                        <h4 class="h4 fw-bolder" style="color: white;">Transition to CAD</h4>
+                        <p style="color: white; line-height: 2.0;">Moving from concept to CAD, I utilized Tinkercad to digitally sculpt my vision. This phase was crucial for visualizing the spatial arrangement and adjusting the scale of each element to maintain proportionality and balance. TinkerCad's intuitive interface facilitated the experimentation with different layouts, but also posed limitations in terms of precision and advanced modeling features. This stage was critical for identifying potential print challenges, such as overhangs and the need for supports, which were unfortunately overlooked during the initial design phase.</p>
+                        <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/ENGR_Dragon1.png" alt="CADDragon">
+                        <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/ENGR_Dragon2.png" alt="CADDragon1">
+
+                        <h4 class="h4 fw-bolder" style="color: white;">CAM and Print Settings</h4>
+                        <p style="color: white; line-height: 2.0;">The CAM process involved translating the CAD model into G-code using Prusa Slicer, where specific print settings were determined:
+                            <ul style="color: white; line-height: 2.0;">
+                                <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/ENGR_Dragon3.png" alt="DragonPrusa">
+                                <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/ENGR_Dragon4.png" alt="DragonPrusa">
+
+                                <li><strong>Layer Height:</strong> I opted for a 0.2 mm layer height, balancing detail and print time.</li>
+                                <li><strong>Infill:</strong> A 15% infill was selected to ensure structural integrity without excessive material use.</li>
+                                <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/ENGR_Dragon6.png" alt="DragonPrusa">
+
+                                <li><strong>Supports:</strong> Initially omitted, resulting in a failed first print due to the dragon's complex overhangs. The second attempt included a brim for added stability, although, in hindsight, a more targeted support strategy or an organic brim could have offered a better solution.</li>
+                            </ul>
+                            <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/dragonfail1.png" alt="DragonPrusa">
+                            <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/dragonfail2.png" alt="DragonPrusa">
+
+                        </p>
+                        
+                        <h4 class="h4 fw-bolder" style="color: white;">Analysis of the Outcome</h4>
+                        <p style="color: white; line-height: 2.0;">The final print, while successful on the second attempt, highlighted several areas for optimization. The omission of adequate supports in the initial print underscored the importance of anticipating structural needs based on the design's complexity. The use of a brim, while effective, introduced challenges in post-processing, suggesting that alternative support strategies could yield cleaner results with less effort. During the process of removing the brim, the "2024" text was unfortunately broke off the 3d print due to its small ans thin size</p>
+                        <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/dragon_product1.png" alt="DragonPrusa">
+                        <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/dragon_product2.png" alt="DragonPrusa">
+
+                        <h4 class="h4 fw-bolder" style="color: white;">Reflections on Goal Achievement and Future Optimization</h4>
+                        <p style="color: white; line-height: 2.0;">The project achieved its primary goal of creating a symbolic representation for the Lunar New Year. However, the journey revealed critical insights into the importance of a holistic approach to 3D printing, where design decisions are informed by an understanding of both the capabilities and limitations of the printing process. Future projects will benefit from a more nuanced approach to supports and possibly exploring advanced CAD tools for greater control over fine details and support structures.</p>
+                        
+                        <h4 class="h4 fw-bolder" style="color: white;">Potential Improvements</h4>
+                        <p style="color: white; line-height: 2.0;">Potential improvements include experimenting with different support settings or software features for more precise control, reducing post-processing work, spending more time in the slicing phase to anticipate problems, and testing with different materials or adjusting settings like print speed or temperature to improve quality and reduce errors.</p>
+                        
+                        <h4 class="h4 fw-bolder" style="color: white;">Conclusion</h4>
+                        <p style="color: white; line-height: 2.0;">This project served as a profound learning experience, demonstrating that successful 3D printing is as much about planning and foresight as it is about creativity and technical skill. The insights gained from each phase of the design and printing process will inform my approach to future projects, ensuring a more efficient, informed, and nuanced application of 3D printing technology.</p>
+                        <p style="color: white; line-height: 2.0;">3D Print Links:</p>
+                        <p style="color: white; line-height: 2.0;">1. Dragon: https://thangs.com/designer/ChelsCCT%20%28ChelseyCreatesThings%29/3d-model/Chinese%20Dragon%20-Platform%20Statue-985910 </p>
+                        <p style="color: white; line-height: 2.0;">2. Other 3D files was directly imported from TinkerCAD</p>
+
+                    </div>
+
+                
+
+<!-- Project 2 -->
+
+                    <div class="col-lg-8" style="margin: auto; margin-bottom: 2.5em;">
+                        <h3 class="h3 fw-bolder text-gradient"> TinkerCAD Project 2: Disney Symbol becomes Ocean Scene Print</h3>
+                        
+                        <h4 class="h4 fw-bolder" style="color: white;">Introduction</h4>
+                        <p style="color: white; line-height: 2.0;">After the first fail print of the dragon project, I decided to try a simpler 3D printing project. My goal was to gain more experience and confidence in my 3D printing skills before revisiting more complex designs. I chose to create an ornament featuring a Disney Princess symbol, reimagined as an ocean scene complete with a house and turtle, symbolizing tranquility and adventure. This project was not only a test of technical skills but also a step back to reflect on the learning process and the importance of resilience in scientific endeavors.</p>
+                        
+                        <h4 class="h4 fw-bolder" style="color: white;">Design and Execution</h4>
+                        <p style="color: white; line-height: 2.0;">The design process for this project was significantly streamlined, thanks to the lessons learned from the previous project. Using TinkerCAD, I imported a file representing the ocean, which served as the backdrop for the Disney Princess symbol transformation. The addition of a house and turtle to the scene was symbolic, aiming to infuse the piece with a sense of narrative and depth, while ensuring the design remained flat and manageable for printing.</p>
+                        <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/disney_sketch.png" alt="DragonPrusa">
+
+                        <p style="color: white; line-height: 2.0;">This project's simplicity allowed for a smooth transition from design to print, with no need for complex support structures or extensive post-processing. The print settings were carefully selected to match the design's requirements:
+                            <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/RapunzelPrint.png" alt="Name Tag Workflow">
+                            <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/RapunzelPrint_2.png" alt="Name Tag Workflow">
+
+                            <ul style="color: white; line-height: 2.0;">
+
+                                <li><strong>Layer Height:</strong> Standard 0.2 mm to ensure a good balance between detail and print time.</li>
+                                <li><strong>Infill:</strong> A 15% infill was selected to ensure structural integrity without excessive material use.</li>
+                                <li><strong>Supports:</strong> Unnecessary due to the design's simplicity, which greatly reduced the likelihood of printing failures.</li>
+                                <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/RapunzelPrint_3.png" alt="Name Tag Workflow">
+                                <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/RapunzelPrint_4.png" alt="Name Tag Workflow">
+                            </ul>
+                        </p>
+                        
+                        <h4 class="h4 fw-bolder" style="color: white;">Outcome and Reflections</h4>
+                        <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/rapunzelproduct.png" alt="Name Tag Workflow">
+
+                        <p style="color: white; line-height: 2.0;">The success of this project on the first attempt was incredibly motivating. It reinforced the value of stepping back and tackling smaller challenges to build confidence and skills gradually. This approach not only allowed for a successful print but also provided a crucial morale boost, encouraging me to not give up on more complex projects like the dragon.</p>
+                        
+                        <h4 class="h4 fw-bolder" style="color: white;">Scientific Mindset and Perseverance</h4>
+                        <p style="color: white; line-height: 2.0;">This experience highlighted the scientific mindset of experimentation, learning from failures, and persistently challenging oneself. The immediate success of this project, contrasted with the initial failure of the dragon project, served as a practical reminder of the importance of resilience and adaptability in the face of challenges.</p>
+                        
+                        <h4 class="h4 fw-bolder" style="color: white;">Future Directions</h4>
+                        <p style="color: white; line-height: 2.0;">Encouraged by the success of this project, I am now more prepared to revisit complex designs with a renewed perspective and improved problem-solving strategies. The lessons learned here will be invaluable for future projects, emphasizing the importance of project selection, incremental learning, and the scientific principle of trial and error.</p>
+                        
+                        <h4 class="h4 fw-bolder" style="color: white;">Conclusion</h4>
+                        <p style="color: white; line-height: 2.0;">The Disney Princess symbol turned ocean scene project was a crucial step in my 3D printing journey, offering a moment of reflection and learning. It proved that facing challenges with a strategic approach and a resilient mindset can lead to significant personal and technical growth. This project has reinvigorated my passion for 3D printing, reminding me that in science and learning, perseverance is key to overcoming obstacles and achieving success.</p>
+                        <p style="color: white; line-height: 2.0;">3D Print Links:</p>
+                        <p style="color: white; line-height: 2.0;">1. Ocean Base: https://www.thingiverse.com/thing:5321855</p>
+                        <p style="color: white; line-height: 2.0;">2. Turtle: https://www.thingiverse.com/thing:1666174</p>
+                        <p style="color: white; line-height: 2.0;">3. Disney: https://www.thingiverse.com/thing:392505</p>
+                        <p style="color: white; line-height: 2.0;">4. Small House: built in TinkerCAD</p>
+
+                
+
+                    </div>
+
+<!-- Project 3 -->
+
+                    <div class="col-lg-8" style="margin: auto; margin-bottom: 2.5em;">
+                        <h3 class="h3 fw-bolder text-gradient"> Fusion360 Project: Headphone Handle Print</h3>
+                        
+                        <h4 class="h4 fw-bolder" style="color: white;">Conceptualization</h4>
+                        <p style="color: white; line-height: 2.0;">The journey began with the necessity for a practical and elegant solution to store my Sony headphones. The concept phase involved sketching the initial idea on an iPad, focusing on functionality and aesthetics. This step was crucial for visualizing the project's scope and determining the essential features of the headphone handle, such as size, shape, and the method of attachment to the wall.</p>
+                        <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/headphone_sketch.png" alt="Name Tag Workflow">
+
+                        <h4 class="h4 fw-bolder" style="color: white;">Design in Fusion360</h4>
+                        <p style="color: white; line-height: 2.0;">Transitioning from a sketch to a digital model, I used Fusion 360 to bring my concept to life. This phase was instrumental in transforming abstract ideas into a tangible design. Starting with a basic box, I applied extrusion and cutting techniques to refine the shape, paying close attention to the dimensions of my headphones to ensure a perfect fit. The CAD process allowed me to iteratively adjust the design, optimizing both for structural integrity and visual appeal. This hands-on experience with Fusion 360 deepened my understanding of 3D modeling principles and tools.</p>
+                        <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/FusionPrint_1.png" alt="Name Tag Workflow">
+                        <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/FusionPrint_2.png" alt="Name Tag Workflow">
+                        <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/FusionPrint_3.png" alt="Name Tag Workflow">
+                        <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/FusionPrint_4.png" alt="Name Tag Workflow">
+
+
+                        <h4 class="h4 fw-bolder" style="color: white;">CAM Process and Print Settings</h4>
+                        <p style="color: white; line-height: 2.0;">The preparation for printing translated the CAD model into practical print instructions. In Prusa Slicer, I selected specific settings to balance quality, strength, and printing efficiency:
+                            <ul style="color: white; line-height: 2.0;">
+                                <li><strong>Layer Height:</strong> Standard 0.2 mm to ensure a good balance between detail and print time.</li>
+                                <li><strong>Infill:</strong> A 15% infill was selected to ensure structural integrity without excessive material use.</li>
+                                <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/fusion2.png" alt="Name Tag Workflow">
+                                <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/fusion3.png" alt="Name Tag Workflow">
+
+                                <li><strong>Supports:</strong> Considering the design featured certain overhangs and complex shapes, supports were strategically included to maintain the integrity of these elements during the print. The decision on support placement and density was influenced by the desire to minimize post-processing work.</li>
+                            </ul>
+                        </p>
+                        
+                        <h4 class="h4 fw-bolder" style="color: white;">Outcome and Evaluation</h4>
+                        <p style="color: white; line-height: 2.0;">The resulting 3D print met and exceeded my expectations. The headphone handle not only functioned as intended but also showcased a high level of craftsmanship, from the smoothness of its surfaces to the precision of its fit. This success was a direct outcome of the careful planning and adjustments made throughout the design and printing process.</p>
+                        <img class="img-fluid project-image" style="margin: auto; margin-bottom: 1.5em;" src="assets/productimage.png" alt="Name Tag Workflow">
+
+                        <h4 class="h4 fw-bolder" style="color: white;">Reflections on Optimization and Future Improvements</h4>
+                        <p style="color: white; line-height: 2.0;">Reflecting on the project, I see opportunities for further optimization. For instance, experimenting with different layer heights or infill patterns could enhance the handle's strength-to-weight ratio. Additionally, exploring alternative support strategies might reduce the need for post-processing, streamlining the production of similar items in the future.</p>
+                        
+                        <h4 class="h4 fw-bolder" style="color: white;">Conclusion</h4>
+                        <p style="color: white; line-height: 2.0;">The custom headphone handle project was a comprehensive exercise in applying 3D printing technology from conceptualization through to the final print. Each step of the process, from sketching to CAD modeling, and from CAM preparation to the final print settings, played a pivotal role in achieving a successful outcome. This project not only fulfilled its initial goal but also served as a valuable learning experience, offering insights into how I can enhance my design and printing strategies for future endeavors.</p>
+
+                    </div>
+
+
+
+                    </div>
+                </div>
+                </section>
+                </section>
+            </main>
+
+        <!-- Footer-->
+        <footer class="bg-black py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0" style="color: light;">Copyright &copy; Ivy Tran 2024</div></div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
